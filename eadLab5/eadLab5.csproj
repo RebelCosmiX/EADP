@@ -110,7 +110,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Corporate.aspx" />
+    <Content Include="Chat.aspx" />
+    <Content Include="Profile.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Enquiry.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -196,12 +197,19 @@
     <Compile Include="Acknowledge.aspx.designer.cs">
       <DependentUpon>Acknowledge.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Corporate.aspx.cs">
-      <DependentUpon>Corporate.aspx</DependentUpon>
+    <Compile Include="Chat.aspx.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Corporate.aspx.designer.cs">
-      <DependentUpon>Corporate.aspx</DependentUpon>
+    <Compile Include="Chat.aspx.designer.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="DAL\customer.cs" />
     <Compile Include="DAL\customerDAO.cs" />
