@@ -2,11 +2,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <link href="CSS/Default.css" rel="Stylesheet" type="text/css" />
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark" id="default_main" style="background-image: url(Resource/nyp_overseas.jpg) ; background-size: 100% 100% ;">
         <div class="col-md-6 px-0">
             <h1 class="display-4 font-italic">NYP Overseas Trip Management System</h1>
-            <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+            <p class="lead my-3">Your one stop option for overseas</p>
             <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
         </div>
     </div>
