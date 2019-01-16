@@ -98,6 +98,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Acknowledge.aspx" />
+    <Content Include="App_Data\EADPProjDB.mdf" />
+    <Content Include="App_Data\EADPProjDB_log.ldf">
+      <DependentUpon>EADPProjDB.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\TimeDeposit.mdf" />
     <Content Include="App_Data\TimeDeposit_log.ldf">
       <DependentUpon>TimeDeposit.mdf</DependentUpon>
