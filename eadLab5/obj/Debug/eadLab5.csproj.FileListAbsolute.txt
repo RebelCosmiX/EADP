@@ -66,3 +66,7 @@ C:\Users\jlmar\Source\Repos\EADP\eadLab5\obj\Debug\eadLab5.csproj.CoreCompileInp
 C:\Users\jlmar\Source\Repos\EADP\eadLab5\obj\Debug\eadLab5.csproj.CopyComplete
 C:\Users\jlmar\Source\Repos\EADP\eadLab5\obj\Debug\eadLab5.dll
 C:\Users\jlmar\Source\Repos\EADP\eadLab5\obj\Debug\eadLab5.pdb
+C:\Users\171349k\Source\Repos\EADP\eadLab5\obj\Debug\eadLab5.csprojAssemblyReference.cache
+C:\Users\171349k\Source\Repos\EADP\eadLab5\obj\Debug\eadLab5.csproj.CoreCompileInputs.cache
+C:\Users\171349k\Source\Repos\EADP\eadLab5\obj\Debug\eadLab5.dll
+C:\Users\171349k\Source\Repos\EADP\eadLab5\obj\Debug\eadLab5.pdb

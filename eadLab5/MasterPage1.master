@@ -45,10 +45,10 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Trip
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Local Schools</a>
-                            <a class="dropdown-item" href="#">Overseas</a>
+                            <a class="dropdown-item" href="#">Study Trips</a>
+                            <a class="dropdown-item" href="#">Overseas Trips</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Internship</a>
+                            <a class="dropdown-item" href="#">Internships</a>
                         </div>
                     </li>
                     <li class="nav-item">
