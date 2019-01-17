@@ -13,7 +13,7 @@ namespace eadLab5.DAL
         public customer getCustomerById(string custId)
         {
             //Get connection string from web.config
-            string DBConnect = ConfigurationManager.ConnectionStrings["ConnStr"].ConnectionString;
+            string DBConnect = ConfigurationManager.ConnectionStrings["ConnStr2"].ConnectionString;
 
             SqlDataAdapter da;
             DataSet ds = new DataSet();
