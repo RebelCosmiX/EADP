@@ -16,5 +16,7 @@ namespace eadLab5.DAL
         public string customerHomePhone { get; set; }
         public string customerMobile { get; set; }
 
+        public string custPassword { get; set; }
+
     }
 }

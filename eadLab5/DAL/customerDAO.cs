@@ -52,5 +52,38 @@ namespace eadLab5.DAL
             return obj;
         }
 
+        public customer login(string user, string pass)
+        {
+            customer obj = new customer();   // create a customer instance
+
+            string conString = ConfigurationManager.ConnectionStrings["ConnStr"].ConnectionString;
+            using (SqlConnection conn = new SqlConnection(conString))
+            {
+                conn.Open();
+                string sql = "SELECT * from Customer WHERE custId=@Usern and custPassword=@pwd";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@Usern", user);
+                cmd.Parameters.AddWithValue("@pwd", pass);
+                //cmd.Parameters.AddWithValue("@pwd", Sha1(Salt(pass)));
+
+                using (SqlDataReader row = cmd.ExecuteReader())
+                {
+                    while (row.Read())
+                    {
+                        obj.customerId = row["custId"].ToString();
+                        obj.customerName = row["custName"].ToString();
+                        obj.customerAddress = row["custAddress"].ToString() + " Singapore " + row["custPostal"].ToString();
+                        obj.customerMobile = row["custMobile"].ToString();
+                        obj.customerHomePhone = row["custHomePhone"].ToString();
+                    }
+                    if (!row.HasRows)
+                        obj = null;
+                    conn.Close();
+                }
+                return obj;
+            }
+
+        }
+
     }
 }

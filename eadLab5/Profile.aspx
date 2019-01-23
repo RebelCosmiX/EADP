@@ -148,7 +148,7 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <h3 class="register-heading">Log in as a student</h3>
-                        <form class="row register-form">
+                        <div class="row register-form">
                             <form  runat="server" class="col-md-8" style="padding-left: 30px;">
                                 <div class="form-group">
                                     <asp:TextBox class="form-control" placeholder="Username *" value="" ID="TextBox1" runat="server"></asp:TextBox>

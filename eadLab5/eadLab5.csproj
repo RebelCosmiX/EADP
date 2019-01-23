@@ -194,6 +194,8 @@
     <Content Include="TermDeposit.aspx" />
     <Content Include="TermDepositPlacement.aspx" />
     <Content Include="TermDepositUpdate.aspx" />
+    <Content Include="Trip.aspx" />
+    <Content Include="ViewCustTrip.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +213,10 @@
     <Compile Include="Chat.aspx.designer.cs">
       <DependentUpon>Chat.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAL\custTrip.cs" />
+    <Compile Include="DAL\custTripDao.cs" />
+    <Compile Include="DAL\Trip.cs" />
+    <Compile Include="DAL\tripDao.cs" />
     <Compile Include="Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -263,6 +269,20 @@
     </Compile>
     <Compile Include="TermDepositUpdate.aspx.designer.cs">
       <DependentUpon>TermDepositUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trip.aspx.cs">
+      <DependentUpon>Trip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trip.aspx.designer.cs">
+      <DependentUpon>Trip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustTrip.aspx.cs">
+      <DependentUpon>ViewCustTrip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCustTrip.aspx.designer.cs">
+      <DependentUpon>ViewCustTrip.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
