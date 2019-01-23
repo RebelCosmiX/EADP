@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage1.master.cs" Inherits="eadLab4.MasterPage1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="Contents/bootstrap.css" rel="stylesheet" />
+    <link href="Contents/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="StyleSheet/MasterPage.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <asp:Image ID="ImgLogo" runat="server" ImageUrl="~/Images/NYP-Logo.png" Height="58px" Width="78px" />
+            <asp:Label ID="LblTitle" runat="server" Text="School Trip Management System" Font-Bold="true" Font-Size="XX-Large"></asp:Label><br class="visible-xs" />
+            <div class="UserInfo">
+                <asp:Label ID="LblWelcome" runat="server" Font-Size="Large" Visible="false"></asp:Label>
+                <asp:ImageButton ID="ImgBtnLogOut" runat="server" ImageUrl="~/Images/Logout.png" Height="12px" Width="12px" OnClick="ImgBtnLogOut_Click" Visible="false" />
+            </div>
+        </div>
+
+        <nav class="nav navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#TeamNavBar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="TeamNavBar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../Default.aspx">Home</a></li>
+                        <li><a href="#">School Trip</a></li>
+                        <li><a href="#">Contact Us</a></li>
+
+                        <%-- HyperLink ID must contain the words "Hyperlink" together with role and ending with "Func" and numbering(eg. HyperlinkPatientFunc1 is Patient function 1) --%>
+                        <li>
+                            <asp:HyperLink ID="HyperLinkStudentFunc1" runat="server" Visible="False" NavigateUrl="~/BookAppointment.aspx">Book Appointment</asp:HyperLink></li>
+
+                        <li>
+                            <asp:HyperLink ID="HyperLinkStaffFunc1" runat="server" Visible="False" NavigateUrl="~/StudentReminder.aspx">Student Reminder</asp:HyperLink></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <div class="Footer">
+            <p>© Copyright School Management Trip System 2019</p>
+        </div>
+    </form>
+</body>
+</html>
