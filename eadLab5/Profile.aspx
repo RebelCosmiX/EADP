@@ -148,15 +148,15 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <h3 class="register-heading">Log in as a student</h3>
-                        <div class="row register-form">
-                            <div class="col-md-8" style="padding-left: 30px;">
+                        <form class="row register-form">
+                            <form  runat="server" class="col-md-8" style="padding-left: 30px;">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                    <asp:TextBox class="form-control" placeholder="Username *" value="" ID="TextBox1" runat="server"></asp:TextBox>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                    <asp:TextBox class="form-control" placeholder="Password *" value="" ID="TextBox2" runat="server"></asp:TextBox>
                                 </div>
-                                <input type="submit" class="btnRegister" value="Log In" />
+                                <asp:Button ID="Button1" CssClass="btnRegister"  runat="server" Text="Log In" OnClick="Button1_Click1" />
                                 <!--
                                 <div class="form-group">
                                     <input type="password" class="form-control" placeholder="Password *" value="" />
@@ -176,7 +176,7 @@
                                         </label>
                                     </div>
                                 </div> -->
-                            </div>
+                            </form>
                             <!--      <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="email" class="form-control" placeholder="Your Email *" value="" />
