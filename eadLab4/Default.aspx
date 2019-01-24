@@ -1,11 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage1.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="eadLab4.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style1 {
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-    </style>
+    .auto-style1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
     <link href="StyleSheet/DefaultPage.css"  rel="stylesheet"/>
