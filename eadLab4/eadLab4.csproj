@@ -136,6 +136,7 @@
     <Content Include="Contents\bootstrap-theme.min.css.map" />
     <Content Include="Contents\bootstrap.css.map" />
     <Content Include="Contents\bootstrap.min.css.map" />
+    <Content Include="Search.aspx" />
     <None Include="scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="scripts\jquery-3.0.0.js" />
     <Content Include="scripts\jquery-3.0.0.min.js" />
@@ -278,6 +279,13 @@
     </Compile>
     <Compile Include="StudentReminder.aspx.designer.cs">
       <DependentUpon>StudentReminder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

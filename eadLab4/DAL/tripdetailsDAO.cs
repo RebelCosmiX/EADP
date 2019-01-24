@@ -45,8 +45,12 @@ namespace eadLab4.DAL
                 obj.duration = row["tripDuration"].ToString();
                 obj.cost = row["tripCost"].ToString();
             }
+            else
+            {
+                obj = null;
+            }
 
-        }
-        return obj;
+            return obj;
+        }  
     }
 }
