@@ -224,6 +224,8 @@
     <Compile Include="DAL\LoginDAO.cs" />
     <Compile Include="DAL\LoginObject.cs" />
     <Compile Include="DAL\MasterPageDAO.cs" />
+    <Compile Include="DAL\tripdetails.cs" />
+    <Compile Include="DAL\tripdetailsDAO.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
