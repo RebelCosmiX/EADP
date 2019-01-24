@@ -18,7 +18,7 @@ namespace eadLab4
             ImgBtnLogOut.CausesValidation = false;
             if(Session["User"] != null)
             {
-                LblWelcome.Text = "Welcome, " + dao.getName(Session["ssLogin"].ToString(), Session["User"].ToString();
+                LblWelcome.Text = "Welcome, " + dao.getName(Session["ssLogin"].ToString(), Session["User"].ToString());
                 LblWelcome.Visible = true;
                 ImgBtnLogOut.Visible = true;
                 MC.ShowUserFunction(Session["User"].ToString(), form1);

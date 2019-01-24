@@ -17,7 +17,7 @@
 <body>
     <form id="form1" runat="server">
         <div class="header">
-            <asp:Image ID="ImgLogo" runat="server" ImageUrl="~/Images/NYP-Logo.png" Height="58px" Width="78px" />
+            <asp:Image ID="ImgLogo" runat="server" ImageUrl="~/Images/NYP-Logo.png" Height="58px" Width="78px" OnLoad="Page_Load" />
             <asp:Label ID="LblTitle" runat="server" Text="School Trip Management System" Font-Bold="true" Font-Size="XX-Large"></asp:Label><br class="visible-xs" />
             <div class="UserInfo">
                 <asp:Label ID="LblWelcome" runat="server" Font-Size="Large" Visible="false"></asp:Label>

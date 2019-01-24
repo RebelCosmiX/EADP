@@ -117,6 +117,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="ResetPassword.aspx" />
     <Content Include="scripts\bootstrap.bundle.js" />
     <Content Include="scripts\bootstrap.bundle.min.js" />
     <Content Include="scripts\esm\popper-utils.js" />
@@ -190,6 +191,7 @@
     <Content Include="scripts\npm.js" />
     <Content Include="StudentReminder.aspx" />
     <Content Include="StyleSheet\DefaultPage.css" />
+    <Content Include="StyleSheet\Forms.css" />
     <Content Include="StyleSheet\LoginPage.css" />
     <Content Include="StyleSheet\MasterPage.css" />
     <Content Include="Web.config" />
@@ -211,6 +213,7 @@
     </Compile>
     <Compile Include="Controller\LoginController.cs" />
     <Compile Include="Controller\MasterPageController.cs" />
+    <Compile Include="Controller\ResetPassword.cs" />
     <Compile Include="Corporate.aspx.cs">
       <DependentUpon>Corporate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -218,6 +221,8 @@
     <Compile Include="Corporate.aspx.designer.cs">
       <DependentUpon>Corporate.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAL\LoginDAO.cs" />
+    <Compile Include="DAL\LoginObject.cs" />
     <Compile Include="DAL\MasterPageDAO.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -258,6 +263,13 @@
       <DependentUpon>Personal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="StudentReminder.aspx.cs">
       <DependentUpon>StudentReminder.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
