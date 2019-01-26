@@ -40,7 +40,7 @@
                         <li><a href="../Default.aspx">Home</a></li>
                         <li><a href="#">School Trip</a></li>
                         <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Search</a></li>
+                        <li><a href="Search.aspx">Search</a></li>
 
                         <%-- HyperLink ID must contain the words "Hyperlink" together with role and ending with "Func" and numbering(eg. HyperlinkPatientFunc1 is Patient function 1) --%>
                         <li>

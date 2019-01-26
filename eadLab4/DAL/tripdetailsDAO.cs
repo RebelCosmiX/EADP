@@ -22,7 +22,7 @@ namespace eadLab4.DAL
             // Write SQL statement to retreive all columns from tripdetails by trip code using query parameter
             StringBuilder sqlCommand = new StringBuilder();
             sqlCommand.AppendLine("Select * from Trips where");
-            sqlCommand.AppendLine("code = @paraCode");
+            sqlCommand.AppendLine("tripCode = @paraCode");
             // *** To simulate system error ***
             // change code in where clause to code1 or
             // change connection string in web config to a wrong file name
