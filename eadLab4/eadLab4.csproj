@@ -195,6 +195,7 @@
     <Content Include="StyleSheet\Forms.css" />
     <Content Include="StyleSheet\LoginPage.css" />
     <Content Include="StyleSheet\MasterPage.css" />
+    <Content Include="TripReview.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -217,7 +218,6 @@
     <Compile Include="Controller\ResetPassword.cs" />
     <Compile Include="Corporate.aspx.cs">
       <DependentUpon>Corporate.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Corporate.aspx.designer.cs">
       <DependentUpon>Corporate.aspx</DependentUpon>
@@ -286,6 +286,13 @@
     </Compile>
     <Compile Include="Search.aspx.designer.cs">
       <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TripReview.aspx.cs">
+      <DependentUpon>TripReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TripReview.aspx.designer.cs">
+      <DependentUpon>TripReview.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

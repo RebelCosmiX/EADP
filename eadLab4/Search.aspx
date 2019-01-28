@@ -3,8 +3,20 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
-            margin-top: 0px;
-            margin-bottom: 0px;
+            display: block;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            border: 1px solid #ccc;
+            padding: 6px 12px;
+            background-color: #fff;
+            background-image: none;
         }
     </style>
 </asp:Content>
@@ -18,7 +30,9 @@
         <div class="panel-body">
             <div class="form-group">
                 <asp:Label ID="lbSearch" runat="server" Text="Type in which trip you want to search for:"></asp:Label>
-                <asp:TextBox ID="tbSearch" runat="server" CssClass="form-control" placeholder="Input Search Result"></asp:TextBox>
+                <br />
+                <br />
+                <asp:TextBox ID="tbSearch" runat="server" CssClass="auto-style1" placeholder="Input Search Result" OnTextChanged="tbSearch_TextChanged" Width="236px"></asp:TextBox>
             </div>
             <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-default" Text="Search" OnClick="btnSearch_Click" />
         </div>

@@ -39,5 +39,10 @@ namespace eadLab4
                 Lbl_tripcost.Text = String.Empty;
             }
         }
+
+        protected void tbSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

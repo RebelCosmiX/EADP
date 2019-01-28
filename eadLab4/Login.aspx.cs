@@ -16,7 +16,7 @@ namespace eadLab4
             this.Form.DefaultButton = this.btnLogin.UniqueID;
             if (Session["ssRole"] == null)
             {
-                Response.Redirect("MainPage.aspx");
+                Response.Redirect("Default.aspx");
             }
             else
             {
@@ -37,7 +37,7 @@ namespace eadLab4
             {
                 Session["ssLogin"] = tbUsername.Text;
                 Session["User"] = role;
-                Response.Redirect("MainPage.aspx");
+                Response.Redirect("Default.aspx");
             }
             else
             {
